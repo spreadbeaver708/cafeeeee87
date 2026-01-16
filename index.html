@@ -9,7 +9,6 @@
 
 <body>
 
-<!-- メインビジュアル -->
 <header class="hero">
   <img src="images/hero.png" alt="喫茶吉田 看板">
   <div class="hero-text">
@@ -18,7 +17,6 @@
   </div>
 </header>
 
-<!-- こだわり -->
 <section class="about">
   <img src="images/owner.png" alt="オーナー吉田">
   <div class="text">
@@ -32,14 +30,12 @@
   </div>
 </section>
 
-<!-- メニュー -->
 <section class="menu">
-  <h2>おすすめメニュー</h2>
+  <h2 class="section-title">おすすめメニュー</h2>
 
   <div class="menu-list">
-
     <div class="menu-item">
-      <img src="images/coffee.png" alt="コーヒー">
+      <img src="images/coffee.png">
       <h3>コーヒー</h3>
       <p>
         毎朝豆を挽き、変わらない手順で淹れる一杯。<br>
@@ -49,7 +45,7 @@
     </div>
 
     <div class="menu-item">
-      <img src="images/scone.png" alt="スコーン">
+      <img src="images/scone.png">
       <h3>スコーン</h3>
       <p>
         外はさっくり、中はしっとり。<br>
@@ -59,7 +55,7 @@
     </div>
 
     <div class="menu-item">
-      <img src="images/pudding.png" alt="プリン">
+      <img src="images/pudding.png">
       <h3>固めプリン</h3>
       <p>
         しっかり固め、ほろ苦いカラメル。<br>
@@ -67,7 +63,6 @@
       </p>
       <span>350円</span>
     </div>
-
   </div>
 
   <div class="more-menu">
@@ -75,11 +70,16 @@
   </div>
 </section>
 
-<!-- 営業時間・アクセス -->
 <section class="info" id="access">
-  <h2>営業時間・アクセス</h2>
+  <h2 class="section-title">営業時間・アクセス</h2>
 
-  <div class="info-box">
+  <div class="access-box">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps?q=香川県高松市常磐町1-3-1&output=embed"
+        loading="lazy"></iframe>
+    </div>
+
     <div class="info-text">
       <p>
         営業時間：7:00〜20:00（Lo.19:30）<br>
@@ -88,17 +88,9 @@
         TEL：00-0000-0000
       </p>
     </div>
-
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps?q=香川県高松市常磐町1-3-1&output=embed"
-        loading="lazy">
-      </iframe>
-    </div>
   </div>
 </section>
 
-<!-- フッター -->
 <footer>
   <a href="#access">アクセス</a>
   <a href="#">トップへ</a>

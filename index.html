@@ -9,93 +9,97 @@
 
 <body>
 
-    <!-- メインビジュアル -->
-  <header class="hero">
-    <img src="images/hero.png" alt="喫茶吉田 看板">
-    <div class="hero-text">
-      <h1>喫茶 吉田</h1>
-      <p>──この街でずっと同じ一杯を。──</p>
+<!-- ヒーロー -->
+<header class="hero">
+  <img src="images/hero.png" alt="喫茶吉田 看板">
+  <div class="hero-text">
+    <h1>喫茶 吉田</h1>
+    <p>──この街でずっと同じ一杯を。──</p>
+  </div>
+</header>
+
+<!-- オーナー -->
+<section class="about">
+  <img src="images/owner.png" alt="オーナー吉田">
+  <div class="text">
+    <h2>～ オーナー吉田のこだわり ～</h2>
+    <p>
+      実際にお話を聞いてその人の好みに合った豆を挽いて淹れる<br>
+      オリジナルブレンドコーヒー。<br>
+      1974年創業から50年以上、変わらない時間と味を提供しています。
+    </p>
+  </div>
+</section>
+
+<!-- メニュー -->
+<section class="menu">
+  <h2>おすすめメニュー</h2>
+
+  <div class="menu-list">
+    <div class="menu-item">
+      <img src="images/coffee.png">
+      <h3>コーヒー</h3>
+      <p>毎朝豆を挽き、変わらない手順で淹れる一杯。</p>
+      <span>450円</span>
     </div>
-  </header>
 
+    <div class="menu-item">
+      <img src="images/scone.png">
+      <h3>スコーン</h3>
+      <p>外はさっくり、中はしっとり。</p>
+      <span>300円</span>
+    </div>
 
-  <!-- こだわり -->
-  <section class="about">
-    <img src="images/owner.png" alt="オーナー吉田">
-    <div class="text">
-      <h2>～ オーナー吉田のこだわり ～</h2>
+    <div class="menu-item">
+      <img src="images/pudding.png">
+      <h3>固めプリン</h3>
+      <p>昔ながらの喫茶店プリン。</p>
+      <span>350円</span>
+    </div>
+  </div>
+
+  <div class="more-menu">
+    <a href="menu.html">その他メニューを見る</a>
+  </div>
+</section>
+
+<!-- 店内状況 -->
+<section class="status">
+  <h2>店内状況</h2>
+  <p>本日：通常営業（7:00〜20:00）</p>
+  <p>混雑状況：比較的空いています</p>
+</section>
+
+<!-- アクセス -->
+<section class="info" id="access">
+  <h2>営業時間・アクセス</h2>
+
+  <div class="info-box">
+    <img src="images/shop.png">
+
+    <div class="info-text">
       <p>
-        実際にお話を聞いてその人の好みに合った豆を挽いて淹れる<br>
-        オリジナルブレンドコーヒー。<br>
-        1974年創業から50年以上、変わらない時間、変わらない味を提供しています。<br>
-        どうぞゆっくりコーヒーをお楽しみください。
+        営業時間：7時〜20時<br>
+        定休日：日曜日<br>
+        住所：香川県高松市常磐町1-3-1<br>
+        TEL：00-0000-0000
       </p>
     </div>
-  </section>
+  </div>
 
-  <!-- メニュー -->
-  <section class="menu">
-    <h2>おすすめメニュー</h2>
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps?q=香川県高松市常磐町1-3-1&output=embed"
+      loading="lazy"></iframe>
+  </div>
+</section>
 
-    <div class="menu-list">
-
-      <div class="menu-item">
-        <img src="images/coffee.png" alt="コーヒー">
-        <h3>コーヒー</h3>
-        <p>
-          毎朝豆を挽き、変わらない手順で淹れる一杯。<br>
-          苦味とコクを大切にした、当店の基本のコーヒーです。
-        </p>
-        <span>450円</span>
-      </div>
-
-      <div class="menu-item">
-        <img src="images/scone.png" alt="スコーン">
-        <h3>スコーン</h3>
-        <p>
-          外はさっくり、中はしっとり。<br>
-          コーヒーと一緒に味わってほしい、素朴なおやつ。
-        </p>
-        <span>300円</span>
-      </div>
-
-      <div class="menu-item">
-        <img src="images/pudding.png" alt="プリン">
-        <h3>固めプリン</h3>
-        <p>
-          しっかり固め、ほろ苦いカラメル。<br>
-          昔ながらの喫茶店プリンです。
-        </p>
-        <span>350円</span>
-      </div>
-
-    </div>
-
-    <div class="more-menu">
-  <p>その他メニュー</p>
-</div>
-  </section>
-
-  <!-- 営業時間・アクセス -->
-  <section class="info">
-    <h2>営業時間・アクセス</h2>
-    <div class="info-box">
-      <img src="images/shop.png" alt="店内写真">
-      <div class="info-text">
-        <p>
-          営業時間：7時〜20時　定休日：日曜日<br>
-          住所：香川県高松市常磐町1-3-1<br>
-          TEL：00-0000-0000
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- フッター -->
-  <footer>
-    <p>© Cafe Yoshida</p>
-  </footer>
+<!-- フッター -->
+<footer>
+  <a href="#access">アクセス</a>
+  <a href="#">トップへ戻る</a>
+  <p>© Cafe Yoshida</p>
+</footer>
 
 </body>
 </html>
-

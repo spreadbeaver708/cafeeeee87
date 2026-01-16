@@ -99,25 +99,34 @@ body {
 .access-box {
   display: flex;
   gap: 40px;
-  align-items: center;
+  align-items: flex-start; /* ← 中央揃えをやめる */
   background: #f8f5f0;
   padding: 30px;
   border-radius: 6px;
 }
 
+/* マップは左 */
 .map {
   width: 60%;
 }
 
 .map iframe {
   width: 100%;
-  height: 300px;
+  height: 320px; /* 少し大きく */
   border: 0;
 }
 
+/* 情報は右 */
 .info-text {
   width: 40%;
+  font-size: 1.1rem;       /* ← 全体を大きく */
+  line-height: 2;          /* ← 読みやすく */
 }
+
+.info-text p {
+  font-weight: bold;       /* ← 店舗情報は強めに */
+}
+
 
 /* footer */
 footer {
@@ -152,3 +161,4 @@ footer a {
     height: 280px;
   }
 }
+

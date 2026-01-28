@@ -6,14 +6,8 @@
 
 body {
   font-family: "Hiragino Mincho ProN", serif;
+  color: #444;
   line-height: 1.8;
-  color: #333;
-}
-
-/* 共通タイトル */
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
 }
 
 /* hero */
@@ -55,134 +49,108 @@ body {
 .menu-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .menu-item {
   width: 30%;
-  display: flex;
-  flex-direction: column;
+  background: #fff;
+  padding: 15px;
   text-align: center;
+  position: relative;
 }
 
 .menu-item img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
-.menu-item p {
-  flex: 1;
-}
 
-.menu-item span {
+.menu-detail {
   margin-top: 10px;
-  font-weight: bold;
+  font-size: 0.9rem;
+  color: #555;
 }
 
-/* more menu */
+.hidden {
+  display: none;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* その他メニュー */
 .more-menu {
-  margin-top: 30px;
   text-align: right;
+  margin-top: 20px;
 }
 
-.more-menu a {
-  text-decoration: none;
+.more-menu button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #444;
+  color: #444;
   font-weight: bold;
-  border-bottom: 2px solid #333;
-  color: #333;
+  cursor: pointer;
 }
 
-/* access */
+/* info */
 .info {
   padding: 60px 10%;
-  background: #f8f5f0; /* ← これを1行追加！ */
 }
 
 .access-box {
   display: flex;
   gap: 40px;
-  align-items: flex-start;
-  /* background: #f8f5f0;  ← 削除、または先頭に // を書いて無効にする */
-  /* padding: 30px;      ← これも消すと、よりスッキリ広がるよ！ */
-  border-radius: 6px;
 }
 
-/* 左：マップ */
 .map {
   width: 60%;
 }
 
 .map iframe {
   width: 100%;
-  height: 340px;
+  height: 320px;
   border: 0;
 }
 
-/* 右：店舗情報 */
 .info-text {
   width: 40%;
-  font-size: 1.2rem;
-  line-height: 2.2;
+}
+.side-footer {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
 }
 
-.info-text p {
-  font-weight: bold;
-}
-
-/* footer */
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-footer a {
-  color: #fff;
-  margin: 0 10px;
+.side-footer a {
+  background: #fff;
+  border: 1px solid #444;
+  padding: 8px 12px;
   text-decoration: none;
+  color: #444;
+  font-size: 0.9rem;
 }
 
-/* その他メニューのリンクに動きをつける */
-.more-menu a {
-  transition: all 0.3s ease; /* 0.3秒かけて変化させるよ */
+.menu-item img {
+  cursor: pointer;
 }
 
-.more-menu a:hover {
-  color: #a67c52; /* マウスを乗せたときの色（ちょっと茶色っぽく） */
-  border-bottom-color: #a67c52; /* 下線の色も変えるよ */
-  opacity: 0.7; /* 少し透けさせて「押せる感」を出すよ */
+.menu-item img {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Wi-Fi情報のデザインをここでコントロール！ */
-.facility-info {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px dashed #ccc; /* 上に点線を入れて区切りをつけるよ */
-}
-
-.facility-info p {
-  font-size: 1.2rem; /* 周りの文字と同じ大きさに！ */
-  line-height: 2.0;  /* 行間を少しゆったりさせるよ */
-  color: #555;       /* ほんの少しだけ色を薄くして上品に */
-}
-
-/* responsive */
-@media (max-width: 768px) {
-  .about,
-  .menu-list,
-  .access-box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-item,
-  .map,
-  .info-text {
-    width: 100%;
-  }
-
-  .map iframe {
-    height: 300px;
-  }
+.menu-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }

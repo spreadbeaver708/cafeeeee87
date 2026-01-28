@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
+<footer class="side-footer">
+  <a href="#top">TOP</a>
+  <a href="#menu">メニュー</a>
+  <a href="#info">店舗情報</a>
+</footer>
 <body>
 
 <!-- メインビジュアル -->
-<header class="hero">
+<header class="hero" id="top">
   <img src="images/hero.png" alt="喫茶吉田 看板">
   <div class="hero-text">
     <h1>喫茶 吉田</h1>
@@ -33,80 +37,63 @@
 </section>
 
 <!-- メニュー -->
-<section class="menu">
+<section class="menu" id="menu">
   <h2 class="section-title">おすすめメニュー</h2>
 
-  <div class="menu-list">
-    <div class="menu-item">
-      <img src="images/coffee.png" alt="コーヒー">
-      <h3>コーヒー</h3>
-      <p>
-        毎朝豆を挽き、変わらない手順で淹れる一杯。<br>
-        苦味とコクを大切にした、当店の基本のコーヒーです。
-      </p>
-      <span>450円</span>
-    </div>
-
-    <div class="menu-item">
-      <img src="images/scone.png" alt="スコーン">
-      <h3>スコーン</h3>
-      <p>
-        外はさっくり、中はしっとり。<br>
-        コーヒーと一緒に味わってほしい、素朴なおやつ。
-      </p>
-      <span>300円</span>
-    </div>
-
-    <div class="menu-item">
-      <img src="images/pudding.png" alt="プリン">
-      <h3>固めプリン</h3>
-      <p>
-        しっかり固め、ほろ苦いカラメル。<br>
-        昔ながらの喫茶店プリンです。
-      </p>
-      <span>350円</span>
-    </div>
-  </div>
+  <!-- JSが全部入れる -->
+  <div class="menu-list" id="menuList"></div>
 
   <div class="more-menu">
-    <a href="menu.html">その他メニュー</a>
+    <button id="moreBtn">その他メニュー</button>
   </div>
+
+  <div id="moreMenuArea" class="hidden"></div>
 </section>
 
-<!-- 営業時間・アクセス -->
+
+
+<!-- 店舗情報 -->
 <section class="info" id="access">
-  <h2 class="section-title">営業時間・アクセス</h2>
+  <h2 class="section-title">店舗情報</h2>
 
   <div class="access-box">
-    <!-- 左：マップ -->
     <div class="map">
       <iframe
         src="https://www.google.com/maps?q=香川県高松市常磐町1-3-1&output=embed"
         loading="lazy"></iframe>
     </div>
 
-    <!-- 右：情報 -->
     <div class="info-text">
-  <p>
-    営業時間：7:00〜20:00（Lo.19:30）<br>
-    定休日：日曜日<br>
-    住所：香川県高松市常磐町1-3-1<br>
-    TEL：00-0000-0000
-  </p>
-  <div class="facility-info">
-    <p> フリーWi-Fi完備</p>
-    <p> 全席コンセントあり</p>
-    <p> 全席喫煙可能</p>
+      <h3>～ 店舗情報 ～</h3>
+      <ul>
+        <li>全席喫煙可能</li>
+        <li>フリーWi-Fi完備</li>
+        <li>全席コンセントあり</li>
+        <li>ペット可能（テラス席のみ）</li>
+        <li>支払いは現金のみ</li>
+      </ul>
+
+      <h3>～ 営業時間 ～</h3>
+      <p>
+        営業時間：7:00〜20:00（Lo.19:30）<br>
+        定休日：日曜日<br>
+        住所：香川県高松市常磐町1-3-1<br>
+        TEL：00-0000-0000
+      </p>
+    </div>
   </div>
-</div>
 </section>
 
-<!-- フッター -->
 <footer>
-  <a href="#access">アクセス</a>
-  <a href="#">トップへ</a>
   <p>© Cafe Yoshida</p>
 </footer>
 
+<script src="script.js"></script>
+<footer class="footer">
+  <a href="#top">TOP</a>
+  <a href="#menu">メニュー</a>
+  <a href="#access">店舗情報</a>
+  <p>© Cafe Yoshida</p>
+</footer>
 </body>
 </html>
